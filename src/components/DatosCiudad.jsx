@@ -1,6 +1,7 @@
 import { ClimaContext } from "../context/ClimaContext"
 import Icons from "../services/Icons"
 
+
 const DatosCiudad = ({ name, pais, temp, main, feel, max, min, hum, viento, lluvia }) => {
 
     if(main !== null || undefined){
