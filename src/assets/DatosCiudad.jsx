@@ -5,7 +5,7 @@ import Icons from "../services/Icons"
 const DatosCiudad = ({ name, pais, temp, main, feel, max, min, hum, viento, lluvia }) => {
 
     if(main !== null || undefined){
-        document.querySelector(".MostrarDatos").style.backgroundImage = `url(/${main}.jpg)`; 
+        document.querySelector(".MostrarDatos").style.backgroundImage = `url(/imagenes/${main}.jpg)`; 
         document.querySelector(".App").style.backgroundColor = `${
             
             main === 'Clouds' ? '#697277' : null ||
