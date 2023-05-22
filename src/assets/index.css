@@ -14,10 +14,28 @@ body, html{
   height: 100vh;  
 }
 
-.MostrarDatos{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.Clouds {
+  background-image: url('https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.Clear {
+  background-image: url('https://images.pexels.com/photos/297954/pexels-photo-297954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.Rain, .Drizzle{
+  background-image: url('https://images.pexels.com/photos/166360/pexels-photo-166360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.Snow {
+  background-image: url('https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.Thunderstorm{
+  background-image: url('https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.Mist {
+  background-image: url('https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
 
 

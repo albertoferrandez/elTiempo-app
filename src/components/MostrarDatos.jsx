@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { getClima } from '../../services/getClima';
 import DatosCiudad from './DatosCiudad';
 import SearchCity from './SearchCity';
@@ -8,10 +8,13 @@ const MostrarDatos = () => {
     const [datos, setDatos] = useState({});
 
     const searchCity = async (city) => {
-        
         const getData = await getClima(city)
         setDatos(getData)
     }
+
+    useEffect(() => {
+        searchCity('Vinaros') // Realizar la búsqueda inicial al cargar la web
+    }, [])
 
     return (
         <>

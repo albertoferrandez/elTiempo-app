@@ -3,10 +3,9 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 import { MdSearch } from "react-icons/md";
 
-
 const SearchCity = ({ handleNewCity }) => {
 
-    const [city, setCity] = useState('')
+    const [city, setCity] = useState('Vinaros')
 
     const handleInputChange = ({ target }) => {
         setCity(target.value)
@@ -14,11 +13,8 @@ const SearchCity = ({ handleNewCity }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-
-        setCity('')
-
         handleNewCity(city)
-
+        setCity('')
     }
 
     return (
