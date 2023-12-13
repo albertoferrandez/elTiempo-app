@@ -1,19 +1,22 @@
-import { useContext } from "react"
-import Header from "./components/Footer"
-import MostrarDatos from "./components/MostrarDatos"
-import Titulo from "./components/Titulo"
-import { ThemeContext } from "./context/theme"
+
+import Main from "./components/ui/Main"
+import SideBar from "./components/SideBar"
+import AllData from "./components/AllData"
+
+import { useState } from "react"
 
 function App() {
 
-  const { theme } = useContext(ThemeContext)
+  const [city, setCity] = useState('Vinaros')
+  const handleCityChange = (newCity) => {
+    setCity(newCity)
+  }
 
   return (
-    <main className={`${theme} App flex flex-col justify-center items-center font-bold`}>
-      <Titulo/>
-      <MostrarDatos />
-      <Header/>
-    </main>
+    <Main>
+      <SideBar city={city} handleCityChange={handleCityChange}/>
+      <AllData city={city}/> 
+    </Main>
   )
 }
 

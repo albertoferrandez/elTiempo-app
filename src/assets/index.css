@@ -1,42 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body, html{
-  font-family: 'Trispace', sans-serif;
-  background-color: #0E9F6E;
-}
-
-.App{
+html, body, #root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  height: 100vh;
   width: 100vw;
-  height: 100vh;  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d6d7da;
 }
-
-.Clouds {
-  background-image: url('https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-}
-
-.Clear {
-  background-image: url('https://images.pexels.com/photos/297954/pexels-photo-297954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-}
-
-.Rain, .Drizzle{
-  background-image: url('https://images.pexels.com/photos/166360/pexels-photo-166360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-}
-
-.Snow {
-  background-image: url('https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-}
-
-.Thunderstorm{
-  background-image: url('https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-}
-
-.Mist {
-  background-image: url('https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-}
-
-
-
